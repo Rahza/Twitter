@@ -1,0 +1,483 @@
+2016-05-02 12:55:06.638 INFO  (main) [   ] o.e.j.u.log Logging initialized @1080ms
+2016-05-02 12:55:06.993 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2016-05-02 12:55:07.013 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/TwitterWork/solr/server/contexts/] at interval 0
+2016-05-02 12:55:07.426 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-05-02 12:55:07.448 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@5383967b{/solr,file:///D:/TwitterWork/solr/server/solr-webapp/webapp/,STARTING}{D:\TwitterWork\solr\server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-05-02 12:55:07.511 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1465085305@57536d79
+2016-05-02 12:55:07.652 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-05-02 12:55:07.652 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: D:\TwitterWork\solr\server\solr
+2016-05-02 12:55:07.653 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: 'D:\TwitterWork\solr\server\solr'
+2016-05-02 12:55:07.653 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-05-02 12:55:07.653 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: D:\TwitterWork\solr\server\solr
+2016-05-02 12:55:07.658 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\TwitterWork\solr\server\solr\solr.xml
+2016-05-02 12:55:07.806 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: D:\TwitterWork\solr\server\solr
+2016-05-02 12:55:07.838 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1658926803
+2016-05-02 12:55:07.838 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=D:\TwitterWork\solr\server\solr]
+2016-05-02 12:55:07.838 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from D:\TwitterWork\solr\server\solr\lib to classpath: D:\TwitterWork\solr\server\solr\lib
+2016-05-02 12:55:07.850 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2016-05-02 12:55:08.005 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-05-02 12:55:08.008 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-05-02 12:55:08.009 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-05-02 12:55:08.011 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-05-02 12:55:08.011 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-05-02 12:55:12.633 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath D:\TwitterWork\solr\server\solr
+2016-05-02 12:55:12.656 INFO  (main) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=twitter, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data\}
+2016-05-02 12:55:12.656 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found core twitter in D:\TwitterWork\solr\server\solr\twitter
+2016-05-02 12:55:12.657 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 1 core definitions
+2016-05-02 12:55:12.660 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=D:\TwitterWork\solr\server
+2016-05-02 12:55:12.660 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-05-02 12:55:12.686 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: 'D:\TwitterWork\solr\server\solr\twitter'
+2016-05-02 12:55:12.686 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-05-02 12:55:12.686 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: D:\TwitterWork\solr\server\solr
+2016-05-02 12:55:12.712 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@5383967b{/solr,file:///D:/TwitterWork/solr/server/solr-webapp/webapp/,AVAILABLE}{D:\TwitterWork\solr\server/solr-webapp/webapp}
+2016-05-02 12:55:12.753 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@702657cc{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-05-02 12:55:12.753 INFO  (main) [   ] o.e.j.s.Server Started @7198ms
+2016-05-02 12:55:12.768 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-05-02 12:55:12.771 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-05-02 12:55:12.789 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-05-02 12:55:12.789 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-05-02 12:55:12.789 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-05-02 12:55:12.789 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-05-02 12:55:12.790 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-05-02 12:55:12.790 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-05-02 12:55:12.790 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-05-02 12:55:12.790 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-05-02 12:55:12.790 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/icu4j-56.1.jar' to classloader
+2016-05-02 12:55:12.790 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-05-02 12:55:12.790 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-05-02 12:55:12.790 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-05-02 12:55:12.790 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-05-02 12:55:12.791 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-05-02 12:55:12.791 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-05-02 12:55:12.791 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-05-02 12:55:12.791 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-05-02 12:55:12.791 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-05-02 12:55:12.791 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-05-02 12:55:12.791 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-05-02 12:55:12.791 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-05-02 12:55:12.791 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-05-02 12:55:12.792 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-05-02 12:55:12.792 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-05-02 12:55:12.792 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-05-02 12:55:12.792 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-05-02 12:55:12.792 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-05-02 12:55:12.792 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-05-02 12:55:12.792 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-05-02 12:55:12.792 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-05-02 12:55:12.793 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-05-02 12:55:12.793 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-05-02 12:55:12.793 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-05-02 12:55:12.793 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/dist/solr-cell-6.0.0.jar' to classloader
+2016-05-02 12:55:12.793 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/clustering/lib/attributes-binder-1.3.1.jar' to classloader
+2016-05-02 12:55:12.793 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-05-02 12:55:12.793 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/clustering/lib/carrot2-mini-3.12.0.jar' to classloader
+2016-05-02 12:55:12.793 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-05-02 12:55:12.793 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-05-02 12:55:12.793 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-05-02 12:55:12.794 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/dist/solr-clustering-6.0.0.jar' to classloader
+2016-05-02 12:55:12.794 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-05-02 12:55:12.794 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-05-02 12:55:12.794 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/dist/solr-langid-6.0.0.jar' to classloader
+2016-05-02 12:55:12.794 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-05-02 12:55:12.794 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-05-02 12:55:12.794 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-05-02 12:55:12.794 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-05-02 12:55:12.794 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr/dist/solr-velocity-6.0.0.jar' to classloader
+2016-05-02 12:55:14.645 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.0.0
+2016-05-02 12:55:14.850 INFO  (qtp12209492-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1462193714333} status=0 QTime=158
+2016-05-02 12:55:14.866 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-05-02 12:55:14.942 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [twitter] Schema name=example-data-driven-schema
+2016-05-02 12:55:15.513 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-05-02 12:55:15.899 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-05-02 12:55:15.918 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-05-02 12:55:15.975 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or 'D:\TwitterWork\solr\server\solr\twitter'
+2016-05-02 12:55:15.975 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'twitter' using configuration from instancedir D:\TwitterWork\solr\server\solr\twitter
+2016-05-02 12:55:15.976 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-05-02 12:55:16.005 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.SolrCore [[twitter] ] Opening new SolrCore at [D:\TwitterWork\solr\server\solr\twitter], dataDir=[D:\TwitterWork\solr\server\solr\twitter\data\]
+2016-05-02 12:55:16.008 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-05-02 12:55:16.023 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.SolrCore [[twitter] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-05-02 12:55:16.024 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.SolrCore [[twitter] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-05-02 12:55:16.027 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-05-02 12:55:16.043 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.CachingDirectoryFactory return new directory for D:\TwitterWork\solr\server\solr\twitter\data
+2016-05-02 12:55:16.044 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.SolrCore New index directory detected: old=null new=D:\TwitterWork\solr\server\solr\twitter\data\index/
+2016-05-02 12:55:16.045 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.CachingDirectoryFactory return new directory for D:\TwitterWork\solr\server\solr\twitter\data\index
+2016-05-02 12:55:16.068 INFO  (OldIndexDirectoryCleanupThreadForCore-twitter) [   x:twitter] o.a.s.c.SolrCore Looking for old index directories to cleanup for core twitter in D:\TwitterWork\solr\server\solr\twitter\data\
+2016-05-02 12:55:16.071 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-05-02 12:55:16.076 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-05-02 12:55:16.192 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-05-02 12:55:16.257 INFO  (qtp12209492-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=1438
+2016-05-02 12:55:16.259 INFO  (qtp12209492-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1462193714334} status=0 QTime=1567
+2016-05-02 12:55:16.292 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-05-02 12:55:16.335 INFO  (qtp12209492-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1462193714334} status=0 QTime=15
+2016-05-02 12:55:16.358 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-05-02 12:55:16.362 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-05-02 12:55:16.363 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-05-02 12:55:16.364 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-05-02 12:55:20.951 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-05-02 12:55:20.951 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-05-02 12:55:20.952 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-05-02 12:55:20.959 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-05-02 12:55:20.959 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-05-02 12:55:20.959 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-05-02 12:55:20.959 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-05-02 12:55:20.959 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-05-02 12:55:20.959 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-05-02 12:55:20.983 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-05-02 12:55:20.984 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-05-02 12:55:21.030 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-05-02 12:55:21.030 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-05-02 12:55:21.140 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@D:\TwitterWork\solr\server\solr\twitter\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@44e3f3f0; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_3,generation=3}
+2016-05-02 12:55:21.140 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.SolrDeletionPolicy newest commit generation = 3
+2016-05-02 12:55:21.999 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.s.SolrIndexSearcher Opening [Searcher@360f20b0[twitter] main]
+2016-05-02 12:55:22.026 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\TwitterWork\solr\server\solr\twitter\conf
+2016-05-02 12:55:22.027 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=D:\TwitterWork\solr\server\solr\twitter\conf}
+2016-05-02 12:55:22.036 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=D:\TwitterWork\solr\server\solr\twitter\conf
+2016-05-02 12:55:22.036 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-05-02 12:55:22.051 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-05-02 12:55:22.066 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-05-02 12:55:22.067 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-05-02 12:55:22.069 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\TwitterWork\solr\server\solr\twitter\conf\elevate.xml
+2016-05-02 12:55:22.113 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-05-02 12:55:22.125 INFO  (searcherExecutor-7-thread-1-processing-x:twitter) [   x:twitter] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@360f20b0[twitter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.0.0):C45476) Uninverting(_1(6.0.0):C45493) Uninverting(_2(6.0.0):C9469) Uninverting(_3(6.0.0):C29997) Uninverting(_4(6.0.0):C11489)))}
+2016-05-02 12:55:22.126 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-05-02 12:55:22.126 INFO  (searcherExecutor-7-thread-1-processing-x:twitter) [   x:twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-05-02 12:55:22.126 INFO  (searcherExecutor-7-thread-1-processing-x:twitter) [   x:twitter] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-05-02 12:55:22.126 INFO  (searcherExecutor-7-thread-1-processing-x:twitter) [   x:twitter] o.a.s.c.SolrCore [twitter] Registered new searcher Searcher@360f20b0[twitter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.0.0):C45476) Uninverting(_1(6.0.0):C45493) Uninverting(_2(6.0.0):C9469) Uninverting(_3(6.0.0):C29997) Uninverting(_4(6.0.0):C11489)))}
+2016-05-02 12:55:22.126 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-05-02 12:55:22.223 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.u.VersionInfo Found MAX value 1531969644442681345 from Terms for _version_ in index
+2016-05-02 12:55:22.229 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.u.UpdateLog Took 104.0ms to seed version buckets with highest version 1531969644442681345
+2016-05-02 12:55:22.230 INFO  (coreLoadExecutor-6-thread-1) [   x:twitter] o.a.s.c.CoreContainer registering core: twitter
+2016-05-02 12:55:23.909 INFO  (qtp12209492-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1462193714333} status=0 QTime=0
+2016-05-02 12:55:23.915 INFO  (qtp12209492-33) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1462193714333} status=0 QTime=4
+2016-05-02 12:55:23.925 INFO  (qtp12209492-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1462193714334} status=0 QTime=15
+2016-05-02 12:55:23.954 INFO  (qtp12209492-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1462193714333} status=0 QTime=0
+2016-05-02 12:55:23.958 INFO  (qtp12209492-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1462193714333} status=0 QTime=2
+2016-05-02 12:55:23.967 INFO  (qtp12209492-34) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1462193714334} status=0 QTime=12
+2016-05-02 12:55:25.526 INFO  (qtp12209492-32) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1462193714333} status=0 QTime=0
+2016-05-02 12:55:25.530 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1462193725517} status=0 QTime=1
+2016-05-02 12:55:25.532 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/replication params={wt=json&command=details&_=1462193725517} status=0 QTime=3
+2016-05-02 12:55:25.536 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1462193714334&ts=1462193714334} status=503 QTime=1
+2016-05-02 12:55:25.552 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/system params={wt=json&_=1462193725517} status=0 QTime=19
+2016-05-02 12:55:25.552 INFO  (qtp12209492-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1462193714334} status=0 QTime=24
+2016-05-02 12:55:28.343 INFO  (qtp12209492-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1462193714333} status=0 QTime=0
+2016-05-02 12:55:28.350 INFO  (qtp12209492-23) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1462193725517} status=0 QTime=5
+2016-05-02 12:55:28.355 INFO  (qtp12209492-31) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1462193714334} status=0 QTime=12
+2016-05-02 12:55:30.024 INFO  (qtp12209492-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1462193714333} status=0 QTime=0
+2016-05-02 12:55:30.034 INFO  (qtp12209492-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1462193714334} status=0 QTime=9
+2016-05-02 12:55:36.228 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=technology&indent=on&wt=json&_=1462193729967} hits=224 status=0 QTime=173
+2016-05-02 12:55:45.838 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=2&wt=json} hits=265 status=0 QTime=60
+2016-05-02 12:56:06.209 INFO  (qtp12209492-14) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&indent=on&wt=json&_=1462193729967} hits=265 status=0 QTime=0
+2016-05-02 12:56:43.934 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=2&wt=json} hits=265 status=0 QTime=0
+2016-05-02 12:57:32.663 INFO  (qtp12209492-20) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 12:57:38.103 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 12:57:53.810 INFO  (qtp12209492-20) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 13:03:14.581 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=lolesports&start=0&rows=20&wt=json} hits=1071 status=0 QTime=71
+2016-05-02 13:05:43.028 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=lolesports&start=0&rows=200&wt=json} hits=1071 status=0 QTime=2
+2016-05-02 13:06:47.297 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=@delsweil+kftf+twitter&start=0&rows=20&wt=json} hits=2283 status=0 QTime=176
+2016-05-02 13:09:09.010 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=@delsweil+kftf+twitter&start=0&rows=20&wt=json} hits=2283 status=0 QTime=0
+2016-05-02 13:14:04.790 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=Floex&start=0&rows=20&wt=json} hits=20 status=0 QTime=16
+2016-05-02 13:35:50.586 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=lolesports&start=0&rows=20&wt=json} hits=1071 status=0 QTime=9
+2016-05-02 13:47:03.151 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#kftf&start=0&rows=20&wt=json} hits=162 status=0 QTime=3
+2016-05-02 13:47:35.087 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#kftf&start=0&rows=100&wt=json} hits=162 status=0 QTime=1
+2016-05-02 13:47:43.901 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#kftf&start=0&rows=1000&wt=json} hits=162 status=0 QTime=1
+2016-05-02 13:48:04.050 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=thomas+enhco&start=0&rows=1000&wt=json} hits=202 status=0 QTime=90
+2016-05-02 13:48:12.763 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=thomas+enhco&start=0&rows=100&wt=json} hits=202 status=0 QTime=1
+2016-05-02 13:52:31.968 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=100&wt=json} hits=885 status=0 QTime=127
+2016-05-02 13:52:32.315 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=100&wt=json} hits=35 status=0 QTime=1
+2016-05-02 13:52:32.371 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=@jessfink&start=0&rows=100&wt=json} hits=38 status=0 QTime=5
+2016-05-02 13:52:52.714 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=200&wt=json} hits=885 status=0 QTime=2
+2016-05-02 13:52:53.173 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=200&wt=json} hits=35 status=0 QTime=0
+2016-05-02 13:52:53.254 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=@jessfink&start=0&rows=200&wt=json} hits=38 status=0 QTime=0
+2016-05-02 13:53:06.368 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=200&wt=json} hits=885 status=0 QTime=0
+2016-05-02 13:53:06.692 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=200&wt=json} hits=35 status=0 QTime=0
+2016-05-02 13:57:00.003 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=2
+2016-05-02 13:57:00.145 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 13:57:19.336 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 13:57:19.437 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 13:58:18.712 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 13:58:18.812 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 13:59:27.635 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 13:59:27.735 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 13:59:38.766 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 13:59:38.868 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 13:59:44.261 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 13:59:44.362 INFO  (qtp12209492-14) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:00:00.951 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 14:00:01.053 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:03:48.564 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:04:59.940 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:04:59.961 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:04:59.981 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.003 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.024 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.045 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.067 INFO  (qtp12209492-14) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.090 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.145 INFO  (qtp12209492-14) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.167 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.187 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.210 INFO  (qtp12209492-20) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.231 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.253 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.275 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.328 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.349 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.370 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.391 INFO  (qtp12209492-20) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.412 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.434 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.463 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.485 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.541 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.562 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.584 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.606 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.627 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.648 INFO  (qtp12209492-20) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.669 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.691 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.746 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.767 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.791 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.813 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.847 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.869 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.891 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.944 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.965 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:00.987 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.008 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.030 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.051 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.074 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.099 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.153 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.174 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.196 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.217 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.239 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.260 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.282 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.335 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.356 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.378 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.399 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.420 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.443 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.465 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.486 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.540 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.560 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.582 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.604 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.625 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.648 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.669 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.723 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.744 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.764 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.786 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.806 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.827 INFO  (qtp12209492-20) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.848 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.869 INFO  (qtp12209492-14) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.922 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.944 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.965 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:01.986 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.008 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.030 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.052 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.109 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.131 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.152 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.173 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.196 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.217 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.237 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.258 INFO  (qtp12209492-14) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.311 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.332 INFO  (qtp12209492-14) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.353 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.375 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.396 INFO  (qtp12209492-20) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.417 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.451 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.512 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:02.534 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=10&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.192 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.224 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.256 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.287 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.319 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.382 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.413 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.447 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.479 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.545 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.576 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.608 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.644 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.710 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.741 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.772 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.805 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.837 INFO  (qtp12209492-14) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.901 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.932 INFO  (qtp12209492-14) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.964 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:27.996 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.060 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.091 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.123 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.155 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.220 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.257 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.292 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.328 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.362 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.428 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.459 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.491 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.523 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.586 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.618 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.649 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.682 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.747 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.778 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.810 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.842 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.875 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.940 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:28.971 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:29.004 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:29.037 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:29.101 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:29.133 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:39.959 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:39.991 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.021 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.052 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.084 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.147 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.179 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.210 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.242 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.306 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.336 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.367 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.398 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.464 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.495 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.529 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.560 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.591 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.655 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.687 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.717 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.787 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.855 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.887 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.919 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:40.949 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.017 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.050 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.081 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.112 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.153 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.220 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.251 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.282 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.314 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.378 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.412 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.450 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.483 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.552 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.583 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.614 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.646 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.679 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.749 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.780 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.812 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.844 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.910 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.942 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:41.973 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.006 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.073 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.108 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.141 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.174 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.210 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.275 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.308 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.339 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.371 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.439 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.476 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.515 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.551 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.618 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.649 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.681 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.712 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.744 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.810 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.841 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.872 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.903 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:42.968 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.000 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.031 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.063 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.132 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.165 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.197 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.229 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.261 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.324 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.356 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.388 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.419 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.484 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.515 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.546 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.578 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.643 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.673 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.705 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.737 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.769 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.831 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.862 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.894 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:05:43.927 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=information&start=0&rows=20&wt=json} hits=265 status=0 QTime=0
+2016-05-02 14:08:23.257 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 14:08:23.358 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:08:40.727 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 14:08:40.826 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:10:27.509 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 14:10:27.610 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:11:23.621 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 14:12:42.306 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 14:12:42.372 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:12:44.960 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 14:12:45.024 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:13:13.527 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=50&wt=json} hits=885 status=0 QTime=0
+2016-05-02 14:13:13.590 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=50&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:13:45.712 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=500&wt=json} hits=885 status=0 QTime=2
+2016-05-02 14:13:46.523 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=500&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:13:59.716 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=500&wt=json} hits=885 status=0 QTime=3
+2016-05-02 14:14:00.469 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=500&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:14:37.933 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=500&wt=json} hits=885 status=0 QTime=2
+2016-05-02 14:14:55.743 INFO  (qtp12209492-20) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=500&wt=json} hits=885 status=0 QTime=2
+2016-05-02 14:16:37.256 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=5000&wt=json} hits=885 status=0 QTime=3
+2016-05-02 14:16:38.784 INFO  (qtp12209492-34) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=5000&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:16:48.773 INFO  (qtp12209492-19) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=100&wt=json} hits=885 status=0 QTime=0
+2016-05-02 14:16:48.922 INFO  (qtp12209492-31) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=100&wt=json} hits=35 status=0 QTime=0
+2016-05-02 14:16:57.272 INFO  (qtp12209492-33) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sheet+music&start=0&rows=100&wt=json} hits=885 status=0 QTime=0
+2016-05-02 14:16:57.453 INFO  (qtp12209492-32) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=#sheetmusic&start=0&rows=100&wt=json} hits=35 status=0 QTime=0

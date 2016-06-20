@@ -1,0 +1,282 @@
+2016-04-18 17:09:54.884 INFO  (main) [   ] o.e.j.u.log Logging initialized @549ms
+2016-04-18 17:09:55.027 INFO  (main) [   ] o.e.j.s.Server jetty-9.3.8.v20160314
+2016-04-18 17:09:55.039 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/TwitterWork/solr-6.0.0/server/contexts/] at interval 0
+2016-04-18 17:09:55.385 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2016-04-18 17:09:55.394 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@5ec0a365{/solr,file:///D:/TwitterWork/solr-6.0.0/server/solr-webapp/webapp/,STARTING}{D:\TwitterWork\solr-6.0.0\server/solr-webapp/webapp} has uncovered http methods for path: /
+2016-04-18 17:09:55.402 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=724125922@2b2948e2
+2016-04-18 17:09:55.418 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-18 17:09:55.418 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: D:\TwitterWork\solr-6.0.0\server\solr
+2016-04-18 17:09:55.419 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: 'D:\TwitterWork\solr-6.0.0\server\solr'
+2016-04-18 17:09:55.419 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-18 17:09:55.419 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: D:\TwitterWork\solr-6.0.0\server\solr
+2016-04-18 17:09:55.424 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\TwitterWork\solr-6.0.0\server\solr\solr.xml
+2016-04-18 17:09:55.481 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Config-defined core root directory: D:\TwitterWork\solr-6.0.0\server\solr
+2016-04-18 17:09:55.506 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1371006431
+2016-04-18 17:09:55.506 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=D:\TwitterWork\solr-6.0.0\server\solr]
+2016-04-18 17:09:55.507 WARN  (main) [   ] o.a.s.c.CoreContainer Couldn't add files from D:\TwitterWork\solr-6.0.0\server\solr\lib to classpath: D:\TwitterWork\solr-6.0.0\server\solr\lib
+2016-04-18 17:09:55.515 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2016-04-18 17:09:55.654 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2016-04-18 17:09:55.656 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2016-04-18 17:09:55.656 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2016-04-18 17:09:55.658 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2016-04-18 17:09:55.658 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2016-04-18 17:09:55.693 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Looking for core definitions underneath D:\TwitterWork\solr-6.0.0\server\solr
+2016-04-18 17:09:55.699 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions
+2016-04-18 17:09:55.702 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=D:\TwitterWork\solr-6.0.0\server
+2016-04-18 17:09:55.702 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2016-04-18 17:09:55.710 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@5ec0a365{/solr,file:///D:/TwitterWork/solr-6.0.0/server/solr-webapp/webapp/,AVAILABLE}{D:\TwitterWork\solr-6.0.0\server/solr-webapp/webapp}
+2016-04-18 17:09:55.723 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@292b08d6{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2016-04-18 17:09:55.723 INFO  (main) [   ] o.e.j.s.Server Started @1389ms
+2016-04-18 17:09:57.177 INFO  (qtp12209492-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=1015
+2016-04-18 17:10:14.481 INFO  (qtp12209492-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=9
+2016-04-18 17:10:14.516 INFO  (qtp12209492-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=8
+2016-04-18 17:10:14.522 INFO  (qtp12209492-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=twitter&action=STATUS&wt=json} status=0 QTime=0
+2016-04-18 17:10:14.672 INFO  (qtp12209492-13) [   ] o.a.s.h.a.CoreAdminOperation core create command name=twitter&action=CREATE&instanceDir=twitter&wt=json
+2016-04-18 17:10:14.675 INFO  (qtp12209492-13) [   ] o.a.s.c.CoreDescriptor Created CoreDescriptor: {name=twitter, config=solrconfig.xml, loadOnStartup=true, schema=schema.xml, configSetProperties=configsetprops.json, transient=false, dataDir=data\}
+2016-04-18 17:10:14.676 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: 'D:\TwitterWork\solr-6.0.0\server\solr\twitter'
+2016-04-18 17:10:14.676 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2016-04-18 17:10:14.676 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: D:\TwitterWork\solr-6.0.0\server\solr
+2016-04-18 17:10:14.712 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2016-04-18 17:10:14.714 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2016-04-18 17:10:14.717 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2016-04-18 17:10:14.717 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/icu4j-56.1.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2016-04-18 17:10:14.718 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/poi-3.11.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/rome-1.0.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2016-04-18 17:10:14.719 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/extraction/lib/xz-1.5.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/dist/solr-cell-6.0.0.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/clustering/lib/attributes-binder-1.3.1.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/clustering/lib/carrot2-guava-18.0.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/clustering/lib/carrot2-mini-3.12.0.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/clustering/lib/jackson-annotations-2.5.4.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/clustering/lib/jackson-databind-2.5.4.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/clustering/lib/simple-xml-2.7.1.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/dist/solr-clustering-6.0.0.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/dist/solr-langid-6.0.0.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/velocity/lib/commons-collections-3.2.2.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2016-04-18 17:10:14.720 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/D:/TwitterWork/solr-6.0.0/dist/solr-velocity-6.0.0.jar' to classloader
+2016-04-18 17:10:15.456 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.0.0
+2016-04-18 17:10:15.523 INFO  (qtp12209492-13) [   ] o.a.s.c.SolrConfig Loaded SolrConfig: solrconfig.xml
+2016-04-18 17:10:15.569 INFO  (qtp12209492-13) [   ] o.a.s.s.IndexSchema [twitter] Schema name=example-data-driven-schema
+2016-04-18 17:10:15.863 INFO  (qtp12209492-13) [   ] o.a.s.s.IndexSchema unique key field: id
+2016-04-18 17:10:15.983 INFO  (qtp12209492-13) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 17:10:15.987 INFO  (qtp12209492-13) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+2016-04-18 17:10:16.009 INFO  (qtp12209492-13) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or 'D:\TwitterWork\solr-6.0.0\server\solr\twitter'
+2016-04-18 17:10:16.009 INFO  (qtp12209492-13) [   ] o.a.s.c.CoreContainer Creating SolrCore 'twitter' using configuration from instancedir D:\TwitterWork\solr-6.0.0\server\solr\twitter
+2016-04-18 17:10:16.010 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+2016-04-18 17:10:16.018 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrCore [[twitter] ] Opening new SolrCore at [D:\TwitterWork\solr-6.0.0\server\solr\twitter], dataDir=[D:\TwitterWork\solr-6.0.0\server\solr\twitter\data\]
+2016-04-18 17:10:16.020 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+2016-04-18 17:10:16.023 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrCore [[twitter] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 17:10:16.023 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrCore [[twitter] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+2016-04-18 17:10:16.026 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SchemaCodecFactory Using default compressionMode: BEST_SPEED
+2016-04-18 17:10:16.038 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.CachingDirectoryFactory return new directory for D:\TwitterWork\solr-6.0.0\server\solr\twitter\data
+2016-04-18 17:10:16.038 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrCore New index directory detected: old=null new=D:\TwitterWork\solr-6.0.0\server\solr\twitter\data\index/
+2016-04-18 17:10:16.038 WARN  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrCore [twitter] Solr index directory 'D:\TwitterWork\solr-6.0.0\server\solr\twitter\data\index' doesn't exist. Creating new index...
+2016-04-18 17:10:16.046 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.CachingDirectoryFactory return new directory for D:\TwitterWork\solr-6.0.0\server\solr\twitter\data\index
+2016-04-18 17:10:16.113 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@D:\TwitterWork\solr-6.0.0\server\solr\twitter\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@539974f8; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-04-18 17:10:16.113 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2016-04-18 17:10:16.114 INFO  (OldIndexDirectoryCleanupThreadForCore-twitter) [   x:twitter] o.a.s.c.SolrCore Looking for old index directories to cleanup for core twitter in D:\TwitterWork\solr-6.0.0\server\solr\twitter\data\
+2016-04-18 17:10:16.116 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+2016-04-18 17:10:16.118 INFO  (qtp12209492-13) [   x:twitter] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2016-04-18 17:10:16.182 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+2016-04-18 17:10:16.245 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+2016-04-18 17:10:16.262 INFO  (qtp12209492-13) [   x:twitter] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 17:10:16.263 INFO  (qtp12209492-13) [   x:twitter] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 17:10:16.264 INFO  (qtp12209492-13) [   x:twitter] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 17:10:16.264 INFO  (qtp12209492-13) [   x:twitter] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+2016-04-18 17:10:16.336 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+2016-04-18 17:10:16.336 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+2016-04-18 17:10:16.336 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+2016-04-18 17:10:16.338 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+2016-04-18 17:10:16.338 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+2016-04-18 17:10:16.338 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+2016-04-18 17:10:16.338 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+2016-04-18 17:10:16.339 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/sql,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+2016-04-18 17:10:16.339 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+2016-04-18 17:10:16.348 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2016-04-18 17:10:16.349 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2016-04-18 17:10:16.355 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.CommitTracker Hard AutoCommit: if uncommited for 15000ms; 
+2016-04-18 17:10:16.355 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2016-04-18 17:10:16.362 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@D:\TwitterWork\solr-6.0.0\server\solr\twitter\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@539974f8; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+2016-04-18 17:10:16.362 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrDeletionPolicy newest commit generation = 1
+2016-04-18 17:10:16.372 INFO  (qtp12209492-13) [   x:twitter] o.a.s.s.SolrIndexSearcher Opening [Searcher@2d79d1b7[twitter] main]
+2016-04-18 17:10:16.379 INFO  (qtp12209492-13) [   x:twitter] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\TwitterWork\solr-6.0.0\server\solr\twitter\conf
+2016-04-18 17:10:16.379 INFO  (qtp12209492-13) [   x:twitter] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=D:\TwitterWork\solr-6.0.0\server\solr\twitter\conf}
+2016-04-18 17:10:16.388 INFO  (qtp12209492-13) [   x:twitter] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=D:\TwitterWork\solr-6.0.0\server\solr\twitter\conf
+2016-04-18 17:10:16.389 INFO  (qtp12209492-13) [   x:twitter] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+2016-04-18 17:10:16.395 INFO  (qtp12209492-13) [   x:twitter] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2016-04-18 17:10:16.402 INFO  (qtp12209492-13) [   x:twitter] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2016-04-18 17:10:16.402 INFO  (qtp12209492-13) [   x:twitter] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+2016-04-18 17:10:16.404 INFO  (qtp12209492-13) [   x:twitter] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\TwitterWork\solr-6.0.0\server\solr\twitter\conf\elevate.xml
+2016-04-18 17:10:16.418 INFO  (qtp12209492-13) [   x:twitter] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+2016-04-18 17:10:16.425 INFO  (searcherExecutor-7-thread-1-processing-x:twitter) [   x:twitter] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2d79d1b7[twitter] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-18 17:10:16.425 INFO  (searcherExecutor-7-thread-1-processing-x:twitter) [   x:twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-18 17:10:16.425 INFO  (searcherExecutor-7-thread-1-processing-x:twitter) [   x:twitter] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2016-04-18 17:10:16.425 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+2016-04-18 17:10:16.425 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+2016-04-18 17:10:16.425 INFO  (searcherExecutor-7-thread-1-processing-x:twitter) [   x:twitter] o.a.s.c.SolrCore [twitter] Registered new searcher Searcher@2d79d1b7[twitter] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2016-04-18 17:10:16.426 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+2016-04-18 17:10:16.426 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1531968924078309376
+2016-04-18 17:10:16.429 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.UpdateLog Took 4.0ms to seed version buckets with highest version 1531968924078309376
+2016-04-18 17:10:16.430 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.CoreContainer registering core: twitter
+2016-04-18 17:10:16.434 INFO  (qtp12209492-13) [   x:twitter] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=twitter&action=CREATE&instanceDir=twitter&wt=json} status=0 QTime=1760
+2016-04-18 17:10:44.602 INFO  (qtp12209492-14) [   x:twitter] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at D:\TwitterWork\solr-6.0.0\server\solr\twitter\conf\managed-schema
+2016-04-18 17:10:44.751 INFO  (qtp12209492-14) [   x:twitter] o.a.s.u.p.LogUpdateProcessorFactory [twitter]  webapp=/solr path=/update params={}{add=[82a72cd9-5f84-4629-a5c1-f1b8e5c32678 (1531968953566363648), f98f45fe-0002-461c-a20b-79ab128a1495 (1531968953734135808), 45da0074-2756-4b51-96a1-66946aa6fbe4 (1531968953736232960), 05fcb068-2414-4d3c-9d70-0aa50f6e8c76 (1531968953737281536), 1dd4f49b-1f1d-4435-b908-783f72a544a1 (1531968953739378688), 5a5e2a8e-35b9-4259-963a-fcd9da88cdb8 (1531968953741475840), 74681a2b-f5c2-494e-85d2-9d431b9a8740 (1531968953742524416), 773f4211-43aa-455d-a869-238597f8e38a (1531968953745670144), fbf45faa-0ee0-4f3e-8948-56c2cc7d1a86 (1531968953746718720), 1ae3e014-1745-4a2b-a059-3cc9729ed74d (1531968953747767296), ... (33 adds)]} 0 218
+2016-04-18 17:10:44.752 ERROR (qtp12209492-14) [   x:twitter] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: ERROR: [doc=c95b4b51-c72e-4c42-979d-d5155c9324da] Error adding field 'favoriteCount'='NA' msg=For input string: "NA"
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:177)
+	at org.apache.solr.update.AddUpdateCommand.getLuceneDocument(AddUpdateCommand.java:82)
+	at org.apache.solr.update.DirectUpdateHandler2.doNormalUpdate(DirectUpdateHandler2.java:280)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc0(DirectUpdateHandler2.java:214)
+	at org.apache.solr.update.DirectUpdateHandler2.addDoc(DirectUpdateHandler2.java:169)
+	at org.apache.solr.update.processor.RunUpdateProcessor.processAdd(RunUpdateProcessorFactory.java:68)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:335)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:117)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:117)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:117)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:117)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldNameMutatingUpdateProcessorFactory$1.processAdd(FieldNameMutatingUpdateProcessorFactory.java:74)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.FieldMutatingUpdateProcessor.processAdd(FieldMutatingUpdateProcessor.java:117)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.doLocalAdd(DistributedUpdateProcessor.java:936)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.versionAdd(DistributedUpdateProcessor.java:1091)
+	at org.apache.solr.update.processor.DistributedUpdateProcessor.processAdd(DistributedUpdateProcessor.java:714)
+	at org.apache.solr.update.processor.LogUpdateProcessorFactory$LogUpdateProcessor.processAdd(LogUpdateProcessorFactory.java:103)
+	at org.apache.solr.update.processor.UpdateRequestProcessor.processAdd(UpdateRequestProcessor.java:48)
+	at org.apache.solr.update.processor.AbstractDefaultValueUpdateProcessorFactory$DefaultValueUpdateProcessor.processAdd(AbstractDefaultValueUpdateProcessorFactory.java:93)
+	at org.apache.solr.handler.loader.CSVLoaderBase.doAdd(CSVLoaderBase.java:391)
+	at org.apache.solr.handler.loader.SingleThreadedCSVLoader.addDoc(CSVLoader.java:43)
+	at org.apache.solr.handler.loader.CSVLoaderBase.load(CSVLoaderBase.java:360)
+	at org.apache.solr.handler.loader.CSVLoader.load(CSVLoader.java:30)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:94)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:69)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:155)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2033)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:652)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:460)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:229)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:184)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1668)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:226)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1160)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:185)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1092)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:213)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:119)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134)
+	at org.eclipse.jetty.server.Server.handle(Server.java:518)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:308)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:244)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95)
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceAndRun(ExecuteProduceConsume.java:246)
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:156)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:654)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:572)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.NumberFormatException: For input string: "NA"
+	at java.lang.NumberFormatException.forInputString(Unknown Source)
+	at java.lang.Long.parseLong(Unknown Source)
+	at java.lang.Long.parseLong(Unknown Source)
+	at org.apache.solr.schema.TrieField.createField(TrieField.java:714)
+	at org.apache.solr.schema.TrieField.createFields(TrieField.java:741)
+	at org.apache.solr.update.DocumentBuilder.addField(DocumentBuilder.java:47)
+	at org.apache.solr.update.DocumentBuilder.toDocument(DocumentBuilder.java:122)
+	... 62 more
+
+2016-04-18 17:10:44.784 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2016-04-18 17:10:45.238 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrDeletionPolicy SolrDeletionPolicy.onCommit: commits: num=2
+	commit{dir=NRTCachingDirectory(MMapDirectory@D:\TwitterWork\solr-6.0.0\server\solr\twitter\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@539974f8; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+	commit{dir=NRTCachingDirectory(MMapDirectory@D:\TwitterWork\solr-6.0.0\server\solr\twitter\data\index lockFactory=org.apache.lucene.store.NativeFSLockFactory@539974f8; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+2016-04-18 17:10:45.238 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.SolrDeletionPolicy newest commit generation = 2
+2016-04-18 17:10:45.262 INFO  (qtp12209492-13) [   x:twitter] o.a.s.s.SolrIndexSearcher Opening [Searcher@50115bce[twitter] main]
+2016-04-18 17:10:45.264 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2016-04-18 17:10:45.264 INFO  (searcherExecutor-7-thread-1-processing-x:twitter) [   x:twitter] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@50115bce[twitter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.0.0):C33)))}
+2016-04-18 17:10:45.264 INFO  (searcherExecutor-7-thread-1-processing-x:twitter) [   x:twitter] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2016-04-18 17:10:45.264 INFO  (searcherExecutor-7-thread-1-processing-x:twitter) [   x:twitter] o.a.s.c.SolrCore [twitter] Registered new searcher Searcher@50115bce[twitter] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(6.0.0):C33)))}
+2016-04-18 17:10:45.264 INFO  (qtp12209492-13) [   x:twitter] o.a.s.u.p.LogUpdateProcessorFactory [twitter]  webapp=/solr path=/update params={commit=true}{commit=} 0 481
+2016-04-18 17:11:00.007 INFO  (qtp12209492-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1460999459830} status=0 QTime=0
+2016-04-18 17:11:00.021 INFO  (qtp12209492-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1460999459831} status=0 QTime=13
+2016-04-18 17:11:00.043 INFO  (qtp12209492-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1460999459831} status=0 QTime=15
+2016-04-18 17:11:02.053 INFO  (qtp12209492-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1460999459830} status=0 QTime=0
+2016-04-18 17:11:02.057 INFO  (qtp12209492-15) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1460999462045} status=0 QTime=1
+2016-04-18 17:11:02.061 INFO  (qtp12209492-36) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/replication params={wt=json&command=details&_=1460999462045} status=0 QTime=3
+2016-04-18 17:11:02.062 INFO  (qtp12209492-21) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1460999459832&ts=1460999459832} status=503 QTime=1
+2016-04-18 17:11:02.087 INFO  (qtp12209492-35) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/system params={wt=json&_=1460999462045} status=0 QTime=27
+2016-04-18 17:11:02.087 INFO  (qtp12209492-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1460999459831} status=0 QTime=33
+2016-04-18 17:11:03.505 INFO  (qtp12209492-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1460999459830} status=0 QTime=0
+2016-04-18 17:11:03.511 INFO  (qtp12209492-21) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1460999462045} status=0 QTime=4
+2016-04-18 17:11:03.524 INFO  (qtp12209492-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1460999459831} status=0 QTime=17
+2016-04-18 17:11:06.285 INFO  (qtp12209492-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1460999459830} status=0 QTime=0
+2016-04-18 17:11:06.287 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/file params={wt=json&_=1460999466280} status=0 QTime=1
+2016-04-18 17:11:06.299 INFO  (qtp12209492-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1460999459831} status=0 QTime=14
+2016-04-18 17:11:06.313 INFO  (qtp12209492-21) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1460999466280} status=0 QTime=1
+2016-04-18 17:11:06.776 INFO  (qtp12209492-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1460999459830} status=0 QTime=0
+2016-04-18 17:11:06.780 INFO  (qtp12209492-14) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1460999466761} status=0 QTime=2
+2016-04-18 17:11:06.789 INFO  (qtp12209492-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1460999459831} status=0 QTime=12
+2016-04-18 17:11:06.817 INFO  (qtp12209492-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1460999459830} status=0 QTime=0
+2016-04-18 17:11:06.820 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/mbeans params={cat=QUERYHANDLER&wt=json&_=1460999466761} status=0 QTime=0
+2016-04-18 17:11:06.832 INFO  (qtp12209492-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1460999459831} status=0 QTime=14
+2016-04-18 17:11:07.925 INFO  (qtp12209492-36) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1460999459830} status=0 QTime=0
+2016-04-18 17:11:07.927 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/replication params={wt=json&command=details&_=1460999462045} status=0 QTime=0
+2016-04-18 17:11:07.940 INFO  (qtp12209492-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1460999459831} status=0 QTime=13
+2016-04-18 17:11:08.476 INFO  (qtp12209492-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1460999459830} status=0 QTime=0
+2016-04-18 17:11:08.481 INFO  (qtp12209492-35) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1460999462045} status=0 QTime=2
+2016-04-18 17:11:08.486 INFO  (qtp12209492-15) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/config params={wt=json&_=1460999468451} status=0 QTime=5
+2016-04-18 17:11:08.495 INFO  (qtp12209492-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1460999459831} status=0 QTime=17
+2016-04-18 17:11:08.541 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1460999462045} status=0 QTime=6
+2016-04-18 17:11:14.575 INFO  (qtp12209492-13) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1460999459830} status=0 QTime=0
+2016-04-18 17:11:14.580 INFO  (qtp12209492-35) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1460999462045} status=0 QTime=2
+2016-04-18 17:11:14.580 INFO  (qtp12209492-16) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/config params={wt=json&_=1460999468451} status=0 QTime=1
+2016-04-18 17:11:14.590 INFO  (qtp12209492-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1460999459831} status=0 QTime=15
+2016-04-18 17:11:14.610 INFO  (qtp12209492-36) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1460999462045} status=0 QTime=1
+2016-04-18 17:11:15.553 INFO  (qtp12209492-13) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/admin/luke params={fl=tweetText&wt=json&_=1460999462045} status=0 QTime=2
+2016-04-18 17:11:27.951 INFO  (qtp12209492-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1460999459830} status=0 QTime=0
+2016-04-18 17:11:27.962 INFO  (qtp12209492-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1460999459831} status=0 QTime=10
+2016-04-18 17:11:33.430 INFO  (qtp12209492-22) [   x:twitter] o.a.s.c.S.Request [twitter]  webapp=/solr path=/select params={q=sexy&indent=on&wt=json&_=1460999487895} hits=1 status=0 QTime=21
