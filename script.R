@@ -9,9 +9,9 @@
 
 library(dplyr)
 library(solrium)
-library(solr)
-
-detach("package:solrium")
+library(sentimentr)
+library(stringr)
+library(koRpus)
 
 ###########
 # HELPERS #
@@ -40,6 +40,7 @@ View(table((events.unique %>% filter(tweetID != "NA"))$type))
 search.queries = events.infos %>% filter(special_key == "query")
 # Merge search queries with their corresponding event
 queries.events = merge(search.queries, events.unique, by.x="eventID", by.y = "ID")
+
 
 # Filter relevant columns
 queries.events.filtered = queries.events[,c("ID", "special_value", "context", "timestamp", "sessionID", "pluginUserID")]
@@ -188,12 +189,11 @@ queries = queries %>% filter(reclick == 1) # Only Refinding Queries
 
 proxies = queries[,c("special_value", "firstHover", "firstClick", "lastHover", "lastClick", "timestamp")]
 
-
 #########
 # INDEX #
 #########
 all.tweets = tweets.unique[,c("tweetID", "tweetTimeStamp", "favoriteCount", "retweetCount")]
-relevant.content = tweets.content[,c("tweetID", "tweetAuthorUsername", "tweetAuthorScreenname", "tweetText", "tweetAbsolutPath", "link_count", "hashtag_count")] # CHEK RT/FAV
+relevant.content = tweets.content[,c("tweetID", "tweetAuthorUsername", "tweetAuthorScreenname", "tweetText", "tweetAbsolutPath", "mention_count", "link_count", "hashtag_count")] # CHEK RT/FAV
 
 duplicates = relevant.content %>% group_by(tweetID) %>% filter(n() >= 2) # duplicate entries
 
@@ -209,14 +209,107 @@ relevant.content = relevant.content[!(relevant.content$tweetID %in% duplicates$t
 tweets = merge(all.tweets, relevant.content, by.x="tweetID", by.y="tweetID") # merge both dataframes
 Encoding(tweets$tweetText) = "UTF-8" # Change text encoding to UTF-8
 
-tweets.filtered = na.omit(tweets)
-write.csv(tweets.filtered, file="D:\\TwitterWork\\tweets.csv", row.names=FALSE)
+tweets.filtered = tweets[complete.cases(tweets[,c("tweetText")]),]
 
+getSentiment = function(text) {
+  sent = sentiment(text)$sentiment
+  return (mean(sent))
+}
+
+getWordCount = function(text) {
+  text = gsub('http.* *', '', text)
+  text = gsub('https.* *', '', text)
+  text = gsub('pic.twitter.* *', '', text)
+  text = gsub("/", " ", text)
+  text = gsub("[[:punct:]]", "", text)
+  text = str_replace(gsub("\\s+", " ", str_trim(text)), "B", "b")
+  return (sapply(gregexpr("\\W+", text), length) + 1)
+}
+
+getCharCount = function(text) {
+  text = gsub('http.* *', '', text)
+  text = gsub('https.* *', '', text)
+  text = gsub('pic.twitter.* *', '', text)
+  return (nchar(text))
+}
+
+# NOT WORKING YET, getting different results for tweet.features test. Remove links? Special chars? etc.
+getReadability = function(text) {
+  text = gsub('http.* *', '', text)
+  text = gsub('https.* *', '', text)
+  text = gsub('pic.twitter.* *', '', text)
+  text = tokenize(text, format="obj", lang="de")
+  text = flesch(text, force.lang = "de")
+  return (slot(text, "Flesch")$RE)
+}
+
+tweets.filtered$sentiment_score = apply(tweets.filtered, 1, function(x) getSentiment(x["tweetText"]))
+tweets.filtered$wordCount = apply(tweets.filtered, 1, function(x) getWordCount(x["tweetText"]))
+tweets.filtered$charCount = apply(tweets.filtered, 1, function(x) getCharCount(x["tweetText"]))
+tweets.filtered$avgWordLength = tweets.filtered$charCount/tweets.filtered$wordCount
+
+
+
+
+
+###############
+
+tweets.filtered = na.omit(tweets)
+tweets.filtered[tweets.filtered$tweetText == "",]$tweetText = NA
+tweets.filtered$tweetTimeStamp = format(as.POSIXct(tweets.filtered$tweetTimeStamp, origin="1970-01-01"), format = "%Y-%m-%dT%H:%M:%SZ")
+tweets.filtered = tweets.filtered[,-8] # Remove link
+tweets.filtered = na.omit(tweets.filtered)
+
+colnames(tweets.filtered) = c("id", "date", "fav_count", "rt_count", "user_name", "user_screen_name", "content", "mention_count.x", "link_count.x", "hashtag_count.x")
+
+tweet.features = read.csv("C:\\Programming\\Twitter\\tweetsClickedFeatures.csv", header = TRUE, sep = ",")
+tweets.merged = merge(tweets.filtered, tweet.features, by.x="id", by.y = "tweetID")
+tweets.merged = tweets.merged[,c("id", "date", "fav_count", "rt_count", "user_name", "user_screen_name", "content", "mention_count", "link_count", "hashtag_count", "poc", "common.noun", "pronoun.not.possessive", "nominal.possessive", "proper.noun", "proper.noun.possessive", "nominal.verbal", "proper.noun.verbal", "verb.or.auxiliary", "adjective", "adverb", "interjection", "determiner", "preposition", "coordinating.conjunction", "verb.particle", "existential", "Twitter.discourse", "emoticon", "punctuation", "other", "sentiment_score", "charCount", "wordCount", "avgWordLength", "readability_score", "fracTweetsWithMentions", "fracTweetsWithHashtag", "fracTweetsWithLinks", "sender_statusesCount", "sender_followersCount", "sender_favoritesCount", "sender_friendsCount")]
+# tweets.merged = na.omit(tweets.merged) --- FIND SOLUTION!!!!
+tweets.merged[is.na(tweets.merged)] = 0 # Replace NA with 0 for now - find better solution!!!
+tweets.merged = tweets.merged[tweets.merged$wordCount > 0,]
+tweets.merged = tweets.merged[!duplicated(tweets.merged[,1]),] # REMOVE DUPLICATES FOR NOW - ASK!!!!!!!!
+
+write.csv(tweets.merged, file="tweets_merged.csv", row.names=FALSE, fileEncoding = "UTF-8")
+
+solr_connect("http://localhost:8983")
+delete_by_query(query = "*:*", "twitter")
+update_csv("tweets_merged.csv", "twitter", commit = TRUE)
+
+
+#################
+# TRAINING FILE #
+#################
+training = proxies[,c("special_value", "firstHover")]
+training$relevance = 1.0
+training$source = "CLICK_LOGS"
+training$special_value = unlist(training$special_value)
+training = training[!duplicated(training[,1]),] # REMOVE DUPLICATES FOR NOW - ASK!!!!!!!!!!!!
+
+training = training[training$lastClick != 130360992,] # Manually remove Tweet that wasn't saved properly
+training[25,]$special_value = "@alexbervoetsbe" # Manually correct query mistake (ASK!!!!!!!!!!)
+
+all.ids = tweets.merged$id
+
+get_examples = function(special_value, id) {
+  ids = all.ids[all.ids != id]
+  positive = data.frame(special_value = special_value, firstHover = id, relevance = 1.0, source = "CLICK_LOGS")
+  negative = data.frame(special_value = special_value, firstHover = ids, relevance = 0, source = "CLICK_LOGS")
+  result = rbind(positive, negative)
+  rownames(result) = NULL
+  return(result)
+}
+
+training.set = do.call("rbind", apply(training, 1, function(x) get_examples(x["special_value"], x["firstHover"])))
+
+write.table(training.set, file = "C:\\Programming\\Twitter\\user_queries_first_hover.txt", quote=FALSE, col.names = FALSE, row.names = FALSE, sep = "|", dec = ".")
 
 ########
 # SOLR #
 ########
 url = "http://localhost:8983/solr/twitter/select"
+solr_connect(url)
+nrows = 1000
 
 ##### FILTER PROXIES TO PREVENT SOLR ERRORS #####
 proxies$remove = apply(proxies, 1, function(x) length(grep("lang:", x["special_value"])))
@@ -232,18 +325,24 @@ proxies = proxies %>% filter(special_value != "NULL")
 proxies = proxies[,c("special_value", "firstHover", "firstClick", "lastHover", "lastClick")]
 #################################################
 
-nrows = 1000
-
-getPosition = function(query, nrows, target) {
+getPosition = function(query, nrows, target, ltr) {
   # Get the query proxies
   if (is.na(target)) return (NA)
-  result = solr_search(q=query, rows=nrows, base=url)
+  if (ltr) result = solr_search(q=query, rows=nrows, rq="{!ltr model=TwitterModel reRankDocs=1000}")
+  else result = solr_search(q=query, rows=nrows)
   
-  position = which(result$tweetID == target)
+  position = which(result$id == target)
   
   if (length(position) == 0) return (-1)
   else return(position)
 }
+
+testcopy = training[,c("special_value", "firstHover")]
+testcopy$pos = apply(testcopy, 1, function(x) getPosition(x["special_value"], nrows, x["firstHover"], FALSE))
+testcopy$ltrPos = apply(testcopy, 1, function(x) getPosition(x["special_value"], nrows, x["firstHover"], TRUE))
+
+getMRR(testcopy$pos)
+getMRR(testcopy$ltrPos)
 
 # INEFFECIENT!!! TODO: Each query once, then return vector of positions for each proxy
 proxies$lastClickPosition = apply(proxies, 1, function(x) getPosition(x["special_value"], nrows, x["lastClick"])) #0.17
@@ -280,7 +379,7 @@ getMRR(proxies$lastHoverPosition, replace.value)
 getMRR(proxies$firstHoverPosition, replace.value)
 # EXPERIMENT END
 
-getMRR = function(positions, replace.value) {
+getMRR = function(positions) {
   positions = na.omit(positions)
   mrr = (1/length(positions)) * sum(1/positions[positions > 0])
   return (mrr)
@@ -317,3 +416,10 @@ table(proxies$hoverEqual)
 
 View(proxies %>% filter(!is.na(firstHover) & !is.na(firstClick) & !is.na(lastHover) & !is.na(lastClick)))
 
+
+
+#################
+
+workingcopy = tweets.collected
+workingcopy$diff = workingcopy$timestamp - workingcopy$tweetTimeStamp
+summary(workingcopy$diff)
