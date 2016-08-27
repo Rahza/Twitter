@@ -16,7 +16,7 @@ library(koRpus)
 ###########
 # HELPERS #
 ###########
-View(tweets.content[tweets.content$tweetID == 622316523005308928,]) # View a single tweets
+View(tweets.content[tweets.content$tweetID == 617898398541221888,]) # View a single tweets
 events.unique[events.unique$tweetID == 600756087797583872,]
 View(events.unique[events.unique$ID == 150107,])
 
@@ -39,12 +39,11 @@ View(table((events.unique %>% filter(tweetID != "NA"))$type))
 # Get all search queries
 search.queries = events.infos %>% filter(special_key == "query")
 # Merge search queries with their corresponding event
-queries.events = merge(search.queries, events.unique, by.x="eventID", by.y = "ID")
-
+search.queries = merge(search.queries, events.unique, by.x="eventID", by.y = "ID")
 
 # Filter relevant columns
-queries.events.filtered = queries.events[,c("ID", "special_value", "context", "timestamp", "sessionID", "pluginUserID")]
-queries.events.filtered$type = "search"
+search.queries = search.queries[,c("ID", "special_value", "context", "timestamp", "sessionID", "pluginUserID")]
+search.queries$type = "search"
 
 # Get relevant data of dataframe
 refinding.sessions = RF.EXP.DATA.COMPLETE[,c("sessionID", "pluginUserID", "reclick")]
@@ -52,10 +51,11 @@ refinding.sessions = RF.EXP.DATA.COMPLETE[,c("sessionID", "pluginUserID", "recli
 refinding.sessions[is.na(refinding.sessions)] = 0
 
 # Merge search queries with refinding table
-queries.events.filtered = merge(queries.events.filtered, refinding.sessions, by=c("sessionID", "pluginUserID"))
+search.queries = merge(search.queries, refinding.sessions, by=c("sessionID", "pluginUserID"))
 
 # Get "event" queries
 event.queries = events.unique %>% filter(type == "recentTweetAuthorClick" | type == "recentTweetClickOnHashtag" | type == "recentTweetMentionClick" | type == "rightClickonHashtag" | type == "rightClickonMention" | type == "TweetAuthorClick" | type == "TweetClickonHashtag" | type == "TweetMentionClick")
+
 
 getAuthor = function(id) {
   tweet = tweets.content %>% filter(tweetID == id)
@@ -63,9 +63,9 @@ getAuthor = function(id) {
 }
 
 getHashtag = function(user, queryTime) {
-  result = NA
-  filtered = events.unique %>% filter(pluginUserID == user & timestamp > queryTime & context != "https://twitter.com/" & type != "scrollSummary") %>% arrange(timestamp)
-  result = gsub("https://twitter.com/hashtag/([^/]+)\\?.*", "\\1", filtered[1,]$context)
+  filtered = events.unique %>% filter(pluginUserID == user & timestamp > queryTime) %>% arrange(timestamp)
+  first.hashtag = filtered[min(which(grepl("/hashtag/", filtered$context))),]
+  result = paste("#", gsub("https://twitter.com/hashtag/([^/]+)\\?.*", "\\1", first.hashtag$context), sep="")
   
   return (result)
 }
@@ -77,46 +77,105 @@ getMention = function(user, queryTime) {
   filtered = events.unique %>% filter(pluginUserID == user & timestamp > queryTime & timestamp < maxTime) %>% arrange(timestamp)
   profileEvent = filtered[which(filtered$type == "profileSummaryViewed"),]
   
-  if (nrow(profileEvent) == 0) {
-    return ("NO PROFILE SUMMARY VIEWED")
-  }
+  if (nrow(profileEvent) == 0) return ("NO PROFILE SUMMARY VIEWED")
   
   mention = as.character(profileViewComplete[which(profileViewComplete$ID == profileEvent[1,]$ID),]$userScreenName)
-  if (length(mention) == 0) {
-    return ("NO MENTION FOUND")
-  }
+  if (length(mention) == 0) return ("NO MENTION FOUND")
   
   filtered = filtered[which(filtered$type == "userPageVisit"),]
   
   if (nrow(filtered) > 0) {
     test = paste("@", gsub("https://twitter.com/([^/]+)/?.*", "\\1", filtered[1,]$context), sep="")
-    if (test == mention) {
-      return (mention)
-    }
-    else {
-      error = paste("ERROR MATCHING", test, "-", mention)
-      return (error)
-    }
+    if (test == mention) return (mention)
+    else return (paste("ERROR MATCHING", test, "-", mention))
   }
-  else {
-    return ("NO USER PAGE VISIT")
-  }
+  else return ("NO USER PAGE VISIT")
 }
 
-# getMention = function(id) {
-#  tweet = tweets.content %>% filter(tweetID == id)
-#  
-#  return (tweet$mention_count)
-# }
+
+
+
+
+
+
+
+
+
+
+
+
+
+getMentionTest = function(user, queryTime) {
+  maxTime = as.numeric(queryTime) + 120
+  filtered = events.unique %>% filter(pluginUserID == user & timestamp > queryTime & timestamp < maxTime) %>% arrange(timestamp)
+  profileEvent = filtered[which(filtered$type == "profileSummaryViewed"),]
+  
+  if (nrow(profileEvent) == 0) return ("NO PROFILE SUMMARY VIEWED")
+
+  filtered = filtered[which(filtered$type == "userPageVisit"),]
+  
+  if (nrow(filtered) > 0) return (paste("@", gsub("https://twitter.com/([^/]+)/?.*", "\\1", filtered[1,]$context), sep=""))
+  
+  return ("NO USER PAGE VISIT")
+}
+
+test = event.queries %>% filter(type == "recentTweetMentionClick" | type == "TweetMentionClick")
+test$mention = apply(test, 1, function(x) getMentionTest(x["tweetID"], x["pluginUserID"], x["timestamp"]))
+
+
+
+getMentionTest = function(id, user, queryTime) {
+  tweet = tweets.content[tweets.content$tweetID == id,]$tweetText
+  mentions = unlist(str_extract_all(tweet, "@\\S+"))
+
+  if (length(mentions) < 1) return ("NO MENTIONS")
+  
+  maxTime = as.numeric(queryTime) + 120
+  filtered = events.unique %>% filter(pluginUserID == user & timestamp > queryTime & timestamp < maxTime) %>% arrange(timestamp)
+  visits = filtered[which(filtered$type == "userPageVisit"),]
+  
+  if (nrow(visits) < 1) return ("NO VISITS")
+  
+  visits$user = paste("@", gsub("https://twitter.com/([^/]+)/?.*", "\\1", visits$context), sep="")
+  
+  matching = mentions[mentions %in% visits$user]
+  
+  if (length(matching) == 1) return (matching[1])
+  return (length(matching))
+}
+
+
+tweet = tweets.content[tweets.content$tweetID == 619691788752654336,]$tweetText
+mentions = unlist(str_extract_all(tweet, "@\\S+"))
+testx = events.unique %>% filter(pluginUserID == 53 & timestamp > 1436760938 & timestamp < 1436761050) %>% arrange(timestamp)
+visits = testx[which(testx$type == "userPageVisit"),]
+visits$user = paste("@", gsub("https://twitter.com/([^/]+)/?.*", "\\1", visits$context), sep="")
+
+matching = mentions[mentions %in% visits$user]
+
+length(matching)
+
+
+
+testx = events.unique %>% filter(pluginUserID == 3 & timestamp >= 1433490233 & timestamp < 1433490353) %>% arrange(timestamp)
+tweets.content[tweets.content$tweetID == 596816674562670592,]$tweetText
+
+
+
+
+
+
+
+
+
+
+
 
 getSpecialValue = function(type, id, user, queryTime) {
   if (type == "TweetAuthorClick" | type == "recentTweetAuthorClick") return (getAuthor(id))
   else if (type == "TweetClickonHashtag" | type == "rightClickonHashtag") return (getHashtag(user, queryTime))
   else if (type == "TweetMentionClick" | type == "recentTweetMentionClick") return (getMention(user, queryTime))
 }
-
-# View(events.unique %>% filter(pluginUserID == 53 & timestamp >= 1431086552))
-# View(tweets.content %>% filter(tweetID == 596550480790233088))
 
 event.queries$special_value = apply(event.queries, 1, function(x) getSpecialValue(x["type"], x["tweetID"], x["pluginUserID"], x["timestamp"]))
 
@@ -151,7 +210,7 @@ getLastClick = function(session, userID, time) {
   else return (NA)
 }
 
-queries = rbind(event.queries.filtered, queries.events.filtered)
+queries = rbind(event.queries.filtered, search.queries)
 queries = queries %>% filter(special_value != "NA")
 
 queries$firstHover = apply(queries, 1, function(x) getFirstHovered(x["sessionID"], x["pluginUserID"], x["timestamp"]))
