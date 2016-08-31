@@ -141,13 +141,13 @@ getMentionTest = function(id, user, queryTime) {
   matching = mentions[mentions %in% visits$user]
   
   if (length(matching) == 1) return (matching[1])
-  return (length(matching))
+  return (paste(matching))
 }
 
 
-tweet = tweets.content[tweets.content$tweetID == 619691788752654336,]$tweetText
+tweet = tweets.content[tweets.content$tweetID == 626991245609537536,]$tweetText
 mentions = unlist(str_extract_all(tweet, "@\\S+"))
-testx = events.unique %>% filter(pluginUserID == 53 & timestamp > 1436760938 & timestamp < 1436761050) %>% arrange(timestamp)
+testx = events.unique %>% filter(pluginUserID == 68 & timestamp >= 1438324138 & timestamp < 1438324258) %>% arrange(timestamp)
 visits = testx[which(testx$type == "userPageVisit"),]
 visits$user = paste("@", gsub("https://twitter.com/([^/]+)/?.*", "\\1", visits$context), sep="")
 
@@ -302,14 +302,26 @@ getReadability = function(text) {
   return (slot(text, "Flesch")$RE)
 }
 
+getPoc = function(text) {
+  return (substring(text, 1, 1) == "@")
+}
+
 tweets.filtered$sentiment_score = apply(tweets.filtered, 1, function(x) getSentiment(x["tweetText"]))
 tweets.filtered$wordCount = apply(tweets.filtered, 1, function(x) getWordCount(x["tweetText"]))
 tweets.filtered$charCount = apply(tweets.filtered, 1, function(x) getCharCount(x["tweetText"]))
 tweets.filtered$avgWordLength = tweets.filtered$charCount/tweets.filtered$wordCount
+tweets.filtered$poc = apply(tweets.filtered, 1, function(x) getPoc(x["tweetText"]))
+tweets.filtered = tweets.filtered %>% group_by(tweetAuthorScreenname) %>% mutate(fracTweetsWithHashtag = sum(hashtag_count >= 1)/n())
+tweets.filtered = tweets.filtered %>% group_by(tweetAuthorScreenname) %>% mutate(fracTweetsWithLinks = sum(link_count >= 1)/n())
+tweets.filtered = tweets.filtered %>% group_by(tweetAuthorScreenname) %>% mutate(fracTweetsWithMentions = sum(mention_count >= 1)/n())
+# tweets.filtered = tweets.filtered %>% group_by(tweetAuthorScreenname) %>% mutate(RTRatio = sum(retweetCount >= 1)/n())
 
+# testa = tweets.filtered %>% group_by(tweetAuthorScreenname, RTRatio) %>% summarise()
+# testb = tweet.features %>% group_by(sender, RTRatio) %>% summarise()
+# test = merge(testa, testb, by.x = "tweetAuthorScreenname", by.y="sender")
+# test$diff = test$RTRatio.x - test$RTRatio.y
 
-
-
+# View(tweets.content %>% filter(tweetAuthorScreenname == "@Feiqn"))
 
 ###############
 
@@ -329,7 +341,7 @@ tweets.merged[is.na(tweets.merged)] = 0 # Replace NA with 0 for now - find bette
 tweets.merged = tweets.merged[tweets.merged$wordCount > 0,]
 tweets.merged = tweets.merged[!duplicated(tweets.merged[,1]),] # REMOVE DUPLICATES FOR NOW - ASK!!!!!!!!
 
-write.csv(tweets.merged, file="tweets_merged.csv", row.names=FALSE, fileEncoding = "UTF-8")
+write.csv(tweets.merged, file="tweets_all.csv", row.names=FALSE, fileEncoding = "UTF-8")
 
 solr_connect("http://localhost:8983")
 delete_by_query(query = "*:*", "twitter")
